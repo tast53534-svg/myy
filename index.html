@@ -2,74 +2,72 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مصطفى نبيل - كينج</title>
+    <title>ديـ🔥ـشا || Disha</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        
-        /* ضبط الخلفية للموقع بالكامل */
         body { 
             background: url('background.png') no-repeat center center fixed; 
             background-size: cover; 
             color: white; 
-            padding: 20px; 
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        .card { 
-            background: rgba(0, 0, 0, 0.6); /* خلفية نصف شفافة لتكون النصوص واضحة فوق الصورة */
-            border-radius: 20px; 
-            padding: 25px; 
-            margin-bottom: 20px; 
-            backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-        }
+        /* تأثير القلوب */
+        .heart { position: fixed; top: -10px; color: #ff0055; font-size: 20px; animation: fall linear infinite; z-index: 1; }
+        @keyframes fall { to { transform: translateY(100vh); } }
 
-        h1 { color: #00d2ff; margin-bottom: 10px; }
+        .container { position: relative; z-index: 2; padding: 20px; }
+        .card { background: rgba(0, 0, 0, 0.6); border-radius: 20px; padding: 25px; margin-bottom: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        h1 { color: #ff0055; margin-bottom: 10px; }
         h3 { color: #00d2ff; margin-bottom: 15px; }
-        p { line-height: 1.6; color: #e0e0e0; margin-bottom: 10px; }
+        p { line-height: 1.6; color: #e0e0e0; }
         img { width: 100%; border-radius: 15px; margin: 15px 0; border: 2px solid #00d2ff; }
-        
-        .social-link { 
-            display: flex; align-items: center; justify-content: center; gap: 10px; 
-            background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; 
-            margin: 8px 0; color: white; text-decoration: none; transition: 0.3s; 
-        }
-        .social-link:hover { background: rgba(0, 210, 255, 0.3); }
+        .social-link { display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin: 8px 0; color: white; text-decoration: none; transition: 0.3s; }
+        .social-link:hover { background: rgba(255, 0, 85, 0.3); }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>مرحباً بك!</h1>
-        <p>أنا مصطفى نبيل (كينج)، مطور ومصمم.</p>
+    <div class="container">
+        <div class="card">
+            <h1>ديـ🔥ـشا || Disha</h1>
+            <p>مطور ومصمم إبداعي</p>
+        </div>
+
+        <div class="card">
+            <h3>عنّي</h3>
+            <p>أنا ديشا. شغوف بالتكنولوجيا والبرمجة، وأعشق التصميم الإبداعي.</p>
+        </div>
+
+        <div class="card">
+            <h3>أعمالي</h3>
+            <img src="IMG_20260601_013316_656.jpg" alt="تصميم">
+            <h3 style="margin-top:15px;">King Bot</h3>
+            <p>بوت واتساب متطور يحتوي على 150+ أمر للحماية.</p>
+        </div>
+
+        <div class="card">
+            <h3>تواصل معي</h3>
+            <a href="https://www.facebook.com/share/18qvcniBjw/" class="social-link"><i class="fab fa-facebook"></i> فيسبوك</a>
+            <a href="https://wa.me/201014326060" class="social-link"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="https://t.me/mn_12mn1" class="social-link"><i class="fab fa-telegram"></i> تليجرام</a>
+        </div>
     </div>
 
-    <div class="card">
-        <h3>عنّي</h3>
-        <p>أنا مصطفى نبيل (كينج). شغوف بالتكنولوجيا والبرمجة، وأعشق <strong>الفوتوشوب</strong> والتصميم الإبداعي. أؤمن دائماً بأن العمل البسيط والمنظم هو أساس الإبداع.</p>
-    </div>
-
-    <div class="card">
-        <h3>أعمالي</h3>
-        <p><strong>عينة بسيطة من أعمالي على الفوتوشوب:</strong></p>
-        <img src="IMG_20260601_013316_656.jpg" alt="تصميم فوتوشوب">
-        
-        <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
-        
-        <h3>King Bot (كينج بوت)</h3>
-        <p>بوت واتساب متطور لحماية الجروبات والبارات.</p>
-        <p>✅ <strong>أكثر من 150 أمر</strong> للتحكم الكامل.<br>✅ حماية قوية من السبام والإزعاج.</p>
-    </div>
-
-    <div class="card">
-        <h3>تواصل معي</h3>
-        <a href="https://www.facebook.com/share/18qvcniBjw/" class="social-link"><i class="fab fa-facebook"></i> فيسبوك</a>
-        <a href="https://wa.me/201014326060" class="social-link"><i class="fab fa-whatsapp"></i> واتساب</a>
-        <a href="https://t.me/mn_12mn1" class="social-link"><i class="fab fa-telegram"></i> تليجرام</a>
-    </div>
-
+    <script>
+        // كود تساقط القلوب
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '👑';
+            heart.className = 'heart';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
 </body>
 </html>
