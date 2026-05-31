@@ -7,84 +7,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { color: white; min-height: 100vh; display: flex; flex-direction: column; }
+        body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: white; padding: 20px; line-height: 1.6; }
         
-        /* الخلفية للصورة الأولى */
-        #home { 
-            background: url('48b729b8-00a0-4b78-8b78-79008eee2cca.png') no-repeat center center/cover; 
-            height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
-        }
-
-        /* الخلفية للصورة الثانية لباقي الأقسام */
-        .content { 
-            background: url('IMG_20260601_020336_086.jpg') no-repeat center center/cover fixed; 
-            flex: 1; padding: 20px; padding-bottom: 90px; 
-        }
-
-        .section { display: none; text-align: center; }
-        .section.active { display: block; }
-        
-        .card { background: rgba(0, 0, 0, 0.7); border-radius: 20px; padding: 30px; margin-bottom: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .card { background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 25px; margin-bottom: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); text-align: center; }
         h1 { color: #00d2ff; margin-bottom: 10px; }
         h3 { color: #00d2ff; margin-bottom: 15px; }
-        p { line-height: 1.6; color: #d1d1d1; margin-bottom: 10px; }
+        p { color: #d1d1d1; margin-bottom: 10px; }
         
-        .btn { background: #00d2ff; border: none; padding: 15px 40px; border-radius: 30px; color: #0f0c29; font-weight: bold; cursor: pointer; }
-        
-        .social-link { display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin: 8px 0; color: white; text-decoration: none; }
-        
-        .bottom-nav { position: fixed; bottom: 0; width: 100%; height: 70px; background: #1a1a2e; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #302b63; z-index: 100; }
-        .nav-item { color: #888; font-size: 1.2em; cursor: pointer; }
-        .nav-item.active { color: #00d2ff; }
+        .social-link { display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin: 8px 0; color: white; text-decoration: none; transition: 0.3s; }
+        .social-link:hover { background: rgba(255,255,255,0.2); }
     </style>
 </head>
 <body>
 
-    <section id="home" class="section active">
+    <div class="card">
         <h1>مصطفى نبيل - كينج</h1>
         <p>مطور ومصمم إبداعي</p>
-        <button class="btn" onclick="show('info')">اعرف المزيد</button>
-    </section>
-
-    <div class="content">
-        <section id="info" class="section">
-            <div class="card">
-                <h3>عنّي</h3>
-                <p>مطور بوتات ومصمم فوتوشوب محترف. أهتم بالتكنولوجيا وأحب تقديم الحلول البرمجية الذكية.</p>
-            </div>
-        </section>
-
-        <section id="work" class="section">
-            <div class="card">
-                <h3>أعمالي</h3>
-                <p><strong>كينج بوت:</strong> 150+ أمر لحماية الجروبات والبارات.</p>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="card">
-                <h3>تواصل معي</h3>
-                <a href="https://www.facebook.com/share/18qvcniBjw/" class="social-link"><i class="fab fa-facebook"></i> فيسبوك</a>
-                <a href="https://wa.me/201014326060" class="social-link"><i class="fab fa-whatsapp"></i> واتساب</a>
-                <a href="https://t.me/mn_12mn1" class="social-link"><i class="fab fa-telegram"></i> تليجرام</a>
-            </div>
-        </section>
     </div>
 
-    <nav class="bottom-nav">
-        <div class="nav-item active" onclick="show('home')"><i class="fas fa-home"></i></div>
-        <div class="nav-item" onclick="show('info')"><i class="fas fa-user"></i></div>
-        <div class="nav-item" onclick="show('work')"><i class="fas fa-code"></i></div>
-        <div class="nav-item" onclick="show('contact')"><i class="fas fa-envelope"></i></div>
-    </nav>
+    <div class="card">
+        <h3>عنّي</h3>
+        <p>مطور بوتات ومبرمج شغوف بالتقنية. أعمل على تطوير مشاريع رقمية مبتكرة وأعشق الفوتوشوب والتصميم.</p>
+    </div>
 
-    <script>
-        function show(id) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            event.currentTarget.classList.add('active');
-        }
-    </script>
+    <div class="card">
+        <h3>أعمالي</h3>
+        <p><strong>كينج بوت (King Bot):</strong> بوت واتساب متطور لحماية الجروبات والبارات، يحتوي على أكثر من 150 أمر للتحكم الكامل والحماية من السبام.</p>
+    </div>
+
+    <div class="card">
+        <h3>تواصل معي</h3>
+        <a href="https://www.facebook.com/share/18qvcniBjw/" class="social-link"><i class="fab fa-facebook"></i> فيسبوك</a>
+        <a href="https://wa.me/201014326060" class="social-link"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <a href="https://t.me/mn_12mn1" class="social-link"><i class="fab fa-telegram"></i> تليجرام</a>
+    </div>
+
 </body>
 </html>
