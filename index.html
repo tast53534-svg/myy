@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مصطفى نبيل - كينج</title>
+    <title>مصطفى نبيل-mostafa nabil </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0f0c29; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: white; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+        body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: white; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
         
         .content { flex: 1; overflow-y: auto; padding: 20px; padding-bottom: 90px; }
         .section { display: none; text-align: center; }
@@ -15,16 +15,16 @@
         
         .card { background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 30px; margin-bottom: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
         h1 { color: #00d2ff; margin-bottom: 10px; }
+        h3 { color: #00d2ff; margin-bottom: 15px; }
         p { line-height: 1.6; margin-bottom: 15px; color: #d1d1d1; }
         
         .btn { background: #00d2ff; border: none; padding: 15px 40px; border-radius: 30px; color: #0f0c29; font-weight: bold; cursor: pointer; font-size: 1.1em; transition: 0.3s; }
         .btn:hover { background: #fff; transform: scale(1.05); }
 
-        .social-icons { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
-        .social-icons a { font-size: 35px; transition: 0.3s; }
-        .social-icons a:hover { transform: scale(1.2); }
+        .social-link { display: flex; align-items: center; justify-content: start; gap: 15px; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin: 10px 0; color: white; text-decoration: none; transition: 0.3s; }
+        .social-link:hover { background: rgba(255,255,255,0.15); }
 
-        .bottom-nav { position: fixed; bottom: 0; width: 100%; height: 70px; background: #1a1a2e; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #302b63; }
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; height: 70px; background: #1a1a2e; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #302b63; z-index: 100; }
         .nav-item { color: #888; font-size: 1.2em; cursor: pointer; transition: 0.3s; }
         .nav-item.active { color: #00d2ff; }
     </style>
@@ -47,18 +47,26 @@
 
         <section id="work" class="section">
             <div class="card">
-                <h3>أعمالي</h3>
-                <p>هنا يمكنك عرض تفاصيل البوتات أو المشاريع التي قمت ببرمجتها.</p>
+                <h3>أعمالي (بوت الحماية)</h3>
+                <p>أقدم لك بوت متطور متخصص في حماية الجروبات والبارات.</p>
+                <p style="color: #00d2ff; font-weight: bold;">البوت يساعدك في:</p>
+                <p>✅ حماية الجروبات من السبام والإزعاج.<br>✅ مراقبة البارات وتأمينها.<br>✅ أدوات تحكم كاملة للمشرفين.</p>
             </div>
         </section>
 
         <section id="contact" class="section">
             <div class="card">
                 <h3>تواصل معي</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/share/18qvcniBjw/" target="_blank" style="color: #1877f2;"><i class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/201014326060" target="_blank" style="color: #25d366;"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://t.me/mn_12mn1" target="_blank" style="color: #0088cc;"><i class="fab fa-telegram"></i></a>
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                    <a href="https://www.facebook.com/share/18qvcniBjw/" target="_blank" class="social-link">
+                        <i class="fab fa-facebook" style="color: #1877f2; font-size: 24px;"></i> فيسبوك
+                    </a>
+                    <a href="https://wa.me/201014326060" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp" style="color: #25d366; font-size: 24px;"></i> واتساب
+                    </a>
+                    <a href="https://t.me/mn_12mn1" target="_blank" class="social-link">
+                        <i class="fab fa-telegram" style="color: #0088cc; font-size: 24px;"></i> تليجرام
+                    </a>
                 </div>
             </div>
         </section>
