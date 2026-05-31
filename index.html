@@ -7,32 +7,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: white; padding: 20px; line-height: 1.6; }
         
-        .card { background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 25px; margin-bottom: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        /* ضبط الخلفية للموقع بالكامل */
+        body { 
+            background: url('background.png') no-repeat center center fixed; 
+            background-size: cover; 
+            color: white; 
+            padding: 20px; 
+            min-height: 100vh;
+        }
+
+        .card { 
+            background: rgba(0, 0, 0, 0.6); /* خلفية نصف شفافة لتكون النصوص واضحة فوق الصورة */
+            border-radius: 20px; 
+            padding: 25px; 
+            margin-bottom: 20px; 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
         h1 { color: #00d2ff; margin-bottom: 10px; }
         h3 { color: #00d2ff; margin-bottom: 15px; }
-        p { color: #d1d1d1; margin-bottom: 10px; }
+        p { line-height: 1.6; color: #e0e0e0; margin-bottom: 10px; }
+        img { width: 100%; border-radius: 15px; margin: 15px 0; border: 2px solid #00d2ff; }
         
-        .social-link { display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin: 8px 0; color: white; text-decoration: none; transition: 0.3s; }
-        .social-link:hover { background: rgba(255,255,255,0.2); }
+        .social-link { 
+            display: flex; align-items: center; justify-content: center; gap: 10px; 
+            background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; 
+            margin: 8px 0; color: white; text-decoration: none; transition: 0.3s; 
+        }
+        .social-link:hover { background: rgba(0, 210, 255, 0.3); }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>مصطفى نبيل - كينج</h1>
-        <p>مطور ومصمم إبداعي</p>
+        <h1>مرحباً بك!</h1>
+        <p>أنا مصطفى نبيل (كينج)، مطور ومصمم.</p>
     </div>
 
     <div class="card">
         <h3>عنّي</h3>
-        <p>مطور بوتات ومبرمج شغوف بالتقنية. أعمل على تطوير مشاريع رقمية مبتكرة وأعشق الفوتوشوب والتصميم.</p>
+        <p>أنا مصطفى نبيل (كينج). شغوف بالتكنولوجيا والبرمجة، وأعشق <strong>الفوتوشوب</strong> والتصميم الإبداعي. أؤمن دائماً بأن العمل البسيط والمنظم هو أساس الإبداع.</p>
     </div>
 
     <div class="card">
         <h3>أعمالي</h3>
-        <p><strong>كينج بوت (King Bot):</strong> بوت واتساب متطور لحماية الجروبات والبارات، يحتوي على أكثر من 150 أمر للتحكم الكامل والحماية من السبام.</p>
+        <p><strong>عينة بسيطة من أعمالي على الفوتوشوب:</strong></p>
+        <img src="IMG_20260601_013316_656.jpg" alt="تصميم فوتوشوب">
+        
+        <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+        
+        <h3>King Bot (كينج بوت)</h3>
+        <p>بوت واتساب متطور لحماية الجروبات والبارات.</p>
+        <p>✅ <strong>أكثر من 150 أمر</strong> للتحكم الكامل.<br>✅ حماية قوية من السبام والإزعاج.</p>
     </div>
 
     <div class="card">
